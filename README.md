@@ -58,3 +58,9 @@ UINavigationController에서는 화면 전환을 push, pop 호출하여 사용�
 show의 특성은 호출하는 클래스에 맞춰서 화면 전환을 해준다.호출하는 화면의 클래스가 UINavigationController였기 때문에 SideMenu View를 push 해줬기에 Side Effect가 발생하였다
 segue를 끊고 화면 전환 코드를 작성해도 되었지만, 기존 코드를 살려 segue의 종류를 show -> present Modally 변경해주었다
 </details>
+
+<details>
+<summary> 2022.11.08 Xcode 14 cocoapods pod init이 되지않은 경우</summary>
+
+[블로그 포스팅 대체](https://plcprogrammer-dy.tistory.com/78)
+</details>
