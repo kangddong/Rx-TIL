@@ -37,3 +37,9 @@
 
   [블로그 포스팅 대체](https://plcprogrammer-dy.tistory.com/81)
 </details>
+
+<details>
+  <summary> 2022.12.15 UICollectionView Dynamic section height </summary>
+
+  [블로그 포스팅 대체](https://plcprogrammer-dy.tistory.com/81)
+</details>
