@@ -39,7 +39,13 @@
 </details>
 
 <details>
-  <summary> 2022.12.15 UICollectionView Dynamic section height </summary>
-
-  [블로그 포스팅 대체](https://plcprogrammer-dy.tistory.com/81)
+  <summary> 2022.12.15 UICollectionView Dynamic Section height </summary>
+  
+  기존 UICollectionViewDelegateFlowLayout 을 채택하지않고 UICollectionView Compositional Layout를 사용하면서 생긴 일..
+  
+  3개의 섹션으로 구성되어있으며, 1번째 섹션을 제외하고 2, 3번째 섹션은 존재할 수도, 존재하지않을수도 있다.
+  1번째 섹션 또한 UI Components 구성이 동적이다.
+  
+  1번째 섹션의 UI Component가 변하게 되어 1번째 섹션의 height가 줄어들어야했지만, 동적 처리 작업을 하지않았다.
+  
 </details>
