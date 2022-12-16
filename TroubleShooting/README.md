@@ -49,3 +49,43 @@
   1번째 섹션의 UI Component가 변하게 되어 1번째 섹션의 height가 줄어들어야했지만, 동적 처리 작업을 하지않았다.
   
 </details>
+
+<details>
+  <summary> 2022.12.16 url->Data main thread warning </summary>
+  
+  Synchronous URL loading of 'url' should not occur on this application's main thread as it may lead to UI  unresponsiveness. 
+  
+  Please switch to an asynchronous networking API such as URLSession.
+  
+  Xcode 14로 변경되면서 thread warning이 표출되었다.
+  
+  url을 통해 UIImage(data: Data)로 init 하는 상황
+ 
+ 
+  기존코드
+  
+  ```swift
+  guard let url = URL(string: item.photo.url),
+        let data = try? try? Data(contentsOf: url) else { return cell }
+        
+  DispatchQueue.main.async {
+      convertedCell.bannerImage.image = UIImage(data: data)
+  }
+  ```
+  
+  대용량의 Data의 경우 main thread에서 작업 시 병목현상이 생길 수 있기 때문
+  변경 후
+  
+  ```swift
+  guard let url = URL(string: item.photo.url) else { return cell }
+            
+  URLSession.shared.dataTask(with: url) { data, response, error in
+      guard let imageData = data else { return }
+            
+      DispatchQueue.main.async {
+           convertedCell.bannerImage.image = UIImage(data: imageData)
+      }
+  }.resume()
+  ```
+  
+</details>
