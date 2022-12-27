@@ -89,3 +89,7 @@
   ```
   
 </details>
+
+<details>
+  <summary> 2022.12.27 message sent to deallocated instance (property usage issue) </summary>
+</details>
