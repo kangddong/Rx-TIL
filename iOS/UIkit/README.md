@@ -9,7 +9,7 @@ User Interface
 ## Container views
 #### UIView
 <details>
-  <summary> UILabel or UIButton rotate 90 degrees, 180 degrees </summary>
+  <summary> 2022.12.28 UILabel or UIButton rotate 90 degrees, 180 degrees </summary>
   
   UILabel, UIButton은 모두 UIView를 Subclass하기 때문에 UIView에 위치했습니다.
   
@@ -40,7 +40,7 @@ User Interface
 
 #### UIButton
 <details>
-  <summary> UIImage.SymbolConfiguration </summary>
+  <summary> 2022.12.28 UIImage.SymbolConfiguration </summary>
   
   ```swift
      button.preferredSymbolConfigurationForImage(in: .normal)
