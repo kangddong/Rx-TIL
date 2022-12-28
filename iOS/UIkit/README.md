@@ -6,14 +6,14 @@ User Interface
 
 ## Views and controls
 
-### Container views
+## Container views
 - UIView
 - Collection views
 - Table views
 - UIStackView
 - UIScrollView
 
-### Content views
+## Content views
 - UIActivityIndicatorView
 - UICalendarView
 - UIImageView
@@ -21,9 +21,21 @@ User Interface
 - UIProgressView
 - UIWebView
 
-### Controls
+## Controls
 - UIControl
-- UIButton
+
+#### UIButton
+<details>
+  <summary> UIImage.SymbolConfiguration </summary>
+  
+  ```swift
+     button.preferredSymbolConfigurationForImage(in: .normal)
+     button.setPreferredSymbolConfiguration(UIImage.SymbolConfiguration(pointSize: 10), forImageIn: .normal)
+  ```
+     
+     
+</details>
+
 - UIColoerWell
 - UIDatePicker
 - UIPageControl
