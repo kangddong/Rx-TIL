@@ -93,3 +93,8 @@
 <details>
   <summary> 2022.12.27 message sent to deallocated instance (property usage issue) </summary>
 </details>
+
+<details>
+  <summary> 2023.01.06 협업 간 cocoapods 관리 문제 </summary>
+  Podfile, Podfile.lock, Pods/
+</details>
