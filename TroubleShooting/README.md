@@ -98,3 +98,8 @@
   <summary> 2023.01.06 협업 간 cocoapods 관리 문제 </summary>
   Podfile, Podfile.lock, Pods/
 </details>
+
+<details>
+  <summary> 2023.01.12 CLLocationManager 이슈 </summary>
+  Podfile, Podfile.lock, Pods/
+</details>
