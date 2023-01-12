@@ -103,3 +103,8 @@
   <summary> 2023.01.12 CLLocationManager 이슈 </summary>
   Podfile, Podfile.lock, Pods/
 </details>
+  
+ <details>
+  <summary> 2023.01.12 Change background color of View inside TabView having NavigationView and ScrollView in SwiftUI </summary>
+  [해답](https://stackoverflow.com/questions/61812677/change-background-color-of-view-inside-tabview-having-navigationview-and-scrollv)
+</details>
