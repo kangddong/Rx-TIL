@@ -106,5 +106,5 @@
   
  <details>
   <summary> 2023.01.12 Change background color of View inside TabView having NavigationView and ScrollView in SwiftUI </summary>
-  [해답](https://stackoverflow.com/questions/61812677/change-background-color-of-view-inside-tabview-having-navigationview-and-scrollv)
+  [해답](https://stackoverflow.com/questions/70276467/tabview-background-transparency-doesnt-work-as-expected-with-scrollview-inside)
 </details>
