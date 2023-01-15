@@ -8,7 +8,7 @@
 - [Container views](#container-views)
     + [UIView](#uiview)
     + Collection views
-    + Table views
+    + [Table views](#table-views)
     + UIStackView
     + UIScrollView
 - [Content views](#content-views)
@@ -70,6 +70,12 @@
 
 #### Collection views
 #### Table views
+<details>
+  <summary> 2023.01.15 tableview didDeselectRowAt </summary>
+  
+    이건 블로그 링크도 대체해주자
+  
+</details>
 #### UIStackView
 #### UIScrollView
 
