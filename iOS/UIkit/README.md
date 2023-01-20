@@ -7,7 +7,7 @@
 - [Views and controls](#views-and-controls)
 - [Container views](#container-views)
     + [UIView](#uiview)
-    + Collection views
+    + [Collection views](#collection-views)
     + [Table views](#table-views)
     + UIStackView
     + UIScrollView
@@ -69,10 +69,19 @@
 </details>
 
 #### Collection views
+<details>
+  <summary> 2023.01.20 collectionView header 설정 </summary>
+    // TODO: 블로그 포스팅
+    1. create UICollectionReusableView
+    2. regist UICollectionReusableView on CollectionView
+    3. set size UICollectionReusableView on Flowlayout
+  
+</details>
+    
 #### Table views
 <details>
   <summary> 2023.01.15 tableview didDeselectRowAt </summary>
-  
+    // TODO: 블로그 포스팅
     이건 블로그 링크도 대체해주자
   
 </details>
