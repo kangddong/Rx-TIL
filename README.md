@@ -32,10 +32,11 @@
 
 ## Firebase
 
-[FCM](Firebase/message.md)
-
 </div>
 
+- [FCM](Firebase/message.md)
+
+----
 <div align=center>
 
 ## Trouble Shooting
