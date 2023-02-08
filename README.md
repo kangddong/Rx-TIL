@@ -7,22 +7,27 @@
 - [iOS](#ios)
 - [Firebase](#firebase)
 - [Trouble Shooting](#trouble-shooting)
-----
 
-<div align=center>
 
-## Swift
+
+<br><br>
+
+<div align=left>
+
+  > ## Swift
+  
 </div>
 
 문법에 대한 정리는 [이곳](Swift/README.md)
 
 꼼꼼한 재은씨 기본편/실전편 스터디에 대한 자료는 [이곳](LetsSwiftyStudy.md)
 
-----
-<div align=center>
+<br><br>
 
-## iOS
-
+<div align=left>
+  
+  > ## iOS
+  
 </div>
 
 * [UIKit](iOS/UIKit) 프레임워크에 있는 클래스들의 개념과 사용해보면서 알게 된 내용 정리
@@ -38,18 +43,33 @@
 * [Home_Screen_Quick_Actions_사용해보기](Home_Screen_Quick_Actions_사용해보기.md)
 * [title과 navigationBar.topItem.title의차이](title과_navigationBar.topItem.title의_차이.md)
 ----
-<div align=center>
 
-## Firebase
+
+<br><br>
+
+<div align=left>
+  
+  > ## UI & UX
+  
+</div>
+
+<br><br>
+
+<div align=left>
+
+  > ## Firebase
 
 </div>
 
 - [FCM](Firebase/message.md)
 
-----
-<div align=center>
 
-## Trouble Shooting
+<br>
+
+<div align=left>
+
+  > ## Trouble Shooting
+  
 </div>
 
 트러블슈팅에 대한 원인 및 해결 과정을 적었습니다. [이곳](TroubleShooting/README.md)
