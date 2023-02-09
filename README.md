@@ -62,7 +62,7 @@
 </div>
 
 - [FCM](Firebase/message.md)
-- [Firebase App Distribution](app_Distribution.md)
+- [Firebase App Distribution](Firebase/app_Distribution.md)
 
 
 <br>
