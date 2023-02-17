@@ -18,9 +18,10 @@
   
 </div>
 
-문법에 대한 정리는 [이곳](Swift/README.md)
-
 꼼꼼한 재은씨 기본편/실전편 스터디에 대한 자료는 [이곳](LetsSwiftyStudy.md)
+문법에 대한 정리는 [이곳](Swift/README.md)
+* [고차함수](Swift/고차함수.md)
+
 
 <br><br>
 
@@ -32,7 +33,7 @@
 
 * [UIKit](iOS/UIKit) 프레임워크에 있는 클래스들의 개념과 사용해보면서 알게 된 내용 정리
 ----
-* [고차함수](Swift/고차함수.md)
+
 * [CGAffineTransform을 이용한 회전](iOS/UIKit/CGAffineTransform_rotate.md)
 * [UIImage SymbolConfiguration 사용해보기](iOS/UIKit/UIImage_SymbolConfiguration_사용해보기.md)
 * [RenderingMode를 통해 이미지의 색상을 바꿔보자](iOS/UIKit/RenderingMode를%20통해%20이미지의%20색상을%20바꿔보자.md)
