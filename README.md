@@ -20,7 +20,8 @@
 
 꼼꼼한 재은씨 기본편/실전편 스터디에 대한 자료는 [이곳](LetsSwiftyStudy.md)
 문법에 대한 정리는 [이곳](Swift/README.md)
-* [고차함수](Swift/고차함수.md)
+* [고차함수 정리](higher-order-function.md)
+* [현재 시간 및 시간 차 구하기](Date-time-difference.md)
 
 
 <br><br>
