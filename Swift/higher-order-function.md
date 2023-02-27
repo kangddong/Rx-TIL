@@ -1,4 +1,4 @@
-## 2022.01.27
+## 2023.01.27
 ## map, flatMap, compactMap, forEach, filter, reduce
   
   ```swift
