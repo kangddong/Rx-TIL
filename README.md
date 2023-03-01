@@ -41,7 +41,7 @@
 * [Swipe Back Gesture UINavigationController에서 사용법](iOS/UIKit/Swipe_Back_Gesture_UINavigationController에서_사용법.md)
 * [UITableView 사용해보기 - 2 (didSelectRowAt with Selection)](iOS/UIKit/About_didDeselectRowAt_Selection.md)
 * [Core Location 사용해보기 - 1](iOS/UIKit/Core_Location.md)
-* collectionView header 사용해보기 - TOD
+* collectionView header 사용해보기 - TODO
 * [Home Screen Quick Actions 사용해보기](iOS/UIKit/Home_Screen_Quick_Actions_사용해보기.md)
 * [title과 navigationBar.topItem.title의차이](iOS/UIKit/title과_navigationBar.topItem.title의_차이.md)
 ----
