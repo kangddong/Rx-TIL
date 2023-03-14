@@ -60,3 +60,10 @@
 * [강남언니](https://blog.gangnamunni.com/blog/ios)
 * [요기요](https://techblog.yogiyo.co.kr/search?q=ios)
 * [레진](https://tech.lezhin.com)
+
+
+# Objective-C 공부에 도움 받은 사이트
+
+* [Documentaion Arichive - Programming with Objective-C](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/FoundationTypesandCollections/FoundationTypesandCollections.html#//apple_ref/doc/uid/TP40011210-CH7-SW2)
+* [Objective - C 2.0 책 요약 블로그](https://karl-park.github.io/devstory/2016/03/22/ObjectiveC-Objective-2-0-1/)
+* [Apple Developer Documentation](https://developer.apple.com/documentation/objectivec/objective-c_runtime?language=objc)
