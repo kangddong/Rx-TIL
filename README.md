@@ -23,6 +23,8 @@
 문법에 대한 정리는 [이곳](Swift/README.md)
 * [고차함수 정리](higher-order-function.md)
 * [현재 시간 및 시간 차 구하기](Date-time-difference.md)
+* [AnyObject vs AnyClass](Swift/AnyObject_vs_AnyClass.md)
+
 
 <div align=left>
 
@@ -30,7 +32,7 @@
 
 </div>
 
-* [bool & BOOL 타입의 차이](boo&BOOL_difference.md)
+* [bool & BOOL 타입의 차이](Objective-C/bool&BOOL_difference.md)
 
 <br><br>
 <div align=left>
