@@ -15,4 +15,3 @@ hostingController.sizingOptions = .preferredContentSize
 hostingController.modalPresentationStyle = .popover
 self.present(hostingController, animated: true)
 ```
-
