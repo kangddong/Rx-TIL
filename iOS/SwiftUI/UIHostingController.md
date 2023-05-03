@@ -15,3 +15,40 @@ hostingController.sizingOptions = .preferredContentSize
 hostingController.modalPresentationStyle = .popover
 self.present(hostingController, animated: true)
 ```
+
+
+```swift
+private lazy var _contentsView: UIHostingController<some View> = {
+	let model = MyModel.shared
+    let hostingController = UIHostingController(
+	    rootView: BlockAppSelectionView()
+		    .environmentObject(model)
+	)
+	return hostingController
+
+}()
+
+/* not add some View
+Property definition has inferred type 'UIHostingController<some View>',
+involving the 'some' return type of another declaration
+*/
+
+static let _contentsView2: UIHostingController = UIHostingController(
+        rootView: BlockAppSelectionView()
+            .environmentObject(MyModel.shared)
+ )
+
+private let _contentsView3: UIHostingController = UIHostingController(
+        rootView: BlockAppSelectionView()
+    )
+
+private func getContentsView() -> UIHostingController<some View> {
+
+	let model = MyModel.shared
+    let hostingController = UIHostingController(
+            rootView: BlockAppSelectionView()
+                .environmentObject(model)
+    )
+    return hostingController
+}
+```
