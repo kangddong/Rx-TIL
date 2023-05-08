@@ -9,7 +9,7 @@ optional func textView(
 ```
 
 `UITextView` 의 `delegate`을 위임받으면 사용할 수 있는 메소드이다
-Text view에서 지정한 텍스트를 바꿀 수 있는 메소드이다.
+Text view에서 지정한 텍스트를 바꿀 수 있는 메소드이다
 
 ### textView
 변화가 포함된 textView이다.
