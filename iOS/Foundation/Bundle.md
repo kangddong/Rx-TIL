@@ -52,9 +52,11 @@ var infoDictionary: [String : Any]? { get }
 `Bundle class` 는 자체 사용을 위해 이 사전에 추가 키를 추가할 수 있습니다. 
 사전 값에 액세스하기 위한 공통 키는 `CFBundleIdentifier`, `NSMainNibFile`, `NSPrincipalClass`  입니다 
 
+Build == Bundle version == CURRENT_PROJECT_VERSION 모두 같은 내용을 참조하고있는 것을 확인했어요
 ## CFBundleVersion
 
 The version of the build that identifies an iteration of the bundle.
+`Build == Bundle version == CURRENT_PROJECT_VERSION` 모두 같은 내용을 참조하고있는 것을 확인했어요
 
 This key is a 10.14.1과 같이 마침표로 구분된 1-3개의 정수로 구성된 시스템에서 읽을 수 있는 문자열입니다. 문자열은 숫자(0-9)와 마침표만 포함할 수 있습니다.
 
@@ -77,3 +79,4 @@ You can include more integers but the system ignores them.
 ## CFBundleShortVersionString
 
 The release or version number of the bundle.
+`Version == Bundle version string (short) == MARKETING_VERSION`
