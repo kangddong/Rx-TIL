@@ -36,3 +36,6 @@ NSAutoreleasePool* pool [[NSAutoreleasePool alloc] init];
 
 ```
 
+
+
+[애플 공식문서](https://developer.apple.com/documentation/foundation/nsautoreleasepool)
