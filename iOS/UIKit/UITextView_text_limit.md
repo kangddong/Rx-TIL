@@ -44,8 +44,6 @@ func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replace
 				}
 	}
 
-  
-
 	print("str.count, text.count, range.length")
 
         print(str.count, text.count, range.length)
