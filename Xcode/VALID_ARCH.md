@@ -18,3 +18,6 @@ Release에는 x86_84가 포함되어있지않았기에 시뮬레이터가 실행
 
 하지만 1번의 경우 Xcode 12에서부터 Deprecated 라고 알려줬기에 장기적으로도 교체가 필요하다.
 `VALID_ARCHS` 의 대안인 `EXCLUDED_ARCHS`를 사용하기로 생각했다.
+
+`EXCLUDED_ARCHS` 설정을 마치고  `VALID_ARCHS` 을 삭제할려고 했는데 잘 되지않았다.
+`Target의 Build Settings`는 Project를 따르기 때문에 `Project Build Settings`에서 지웠다.
