@@ -20,14 +20,16 @@ A: To determine the language for your app, iOS considers not only the order of 
     
     **Note:** An `.lproj` folder is a directory that stores language-specific resources. See [Localized Resources in Bundles](https://developer.apple.com/library/ios/documentation/CoreFoundation/Conceptual/CFBundles/BundleTypes/BundleTypes.html#//apple_ref/doc/uid/10000123i-CH101-SW7) and [Language and Locale IDs](https://developer.apple.com/library/ios/documentation/MacOSX/Conceptual/BPInternational/LanguageandLocaleIDs/LanguageandLocaleIDs.html#//apple_ref/doc/uid/10000171i-CH15-SW1) for details.
     
-3.  If none of the user’s preferred languages are supported by your app, iOS chooses the language matching your app's development region ([CFBundleDevelopmentRegion](https://developer.apple.com/library/ios/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html#//apple_ref/doc/uid/TP40009249-130430-BAJJHDJH)).
+3.  앱에서 사용자의 기본 언어를 지원하지 않는 경우 iOS는 앱의 개발 지역과 일치하는 언어를 선택합니다 ([CFBundleDevelopmentRegion](https://developer.apple.com/library/ios/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html#//apple_ref/doc/uid/TP40009249-130430-BAJJHDJH)).
     
-    **Note:** Be sure to set `CFBundleDevelopmentRegion` for your app. If you adopt Base Localization, make sure that the value of `CFBundleDevelopmentRegion` matches the language used by your content in the `Base.lproj` folder.
+    **Note:** 앱에 대해  `CFBundleDevelopmentRegion` 설정해야 합니다.
+    기본 현지화를 채택하는 경우,  `CFBundleDevelopmentRegion` 의 값이 `Base.lproj` 폴더 콘텐츠에서 사용하는 언어와 일치하는지 확인하십시오.
     
 
-Once the system has chosen a language for your app, the matching `.lproj` folder is used to locate the localized resources. If your app's UI or the system-provided UI components (such as text editing menus, UIDatePicker, UIImagePickerController and UILocalizedIndexedCollation) are displayed in a wrong language, make sure that your app contains all its supported languages' `.lproj` folders and that these folders are correctly named.
+시스템에서 앱의 언어를 선택하면, 일치하는 `.lproj` 폴더를 사용하여 localized resources를 찾습니다.
+앱의 UI 또는 시스템 제공 UI 구성 요소 (text editing menus, UIDatePicker, UIImagePickerController and UILocalizedIndexedCollation) 가 잘못된 언어로 표시되는 경우 앱에 지원되는 모든 언어의 폴더가 포함되어 있고 `.lproj` 폴더의 이름이 올바른지 확인하세요.
 
-If your app manages the localized resources without using any `.lproj` folders, be sure to specify the supported languages with [CFBundleLocalizations](https://developer.apple.com/library/ios/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html#//apple_ref/doc/uid/20001431-109552).
+앱이 `.lproj`폴더를 사용하지 않고 현지화된 리소스를 관리하는 경우 [CFBundleLocalizations](https://developer.apple.com/library/ios/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html#//apple_ref/doc/uid/20001431-109552)을 사용하여 지원되는 언어를 지정해야 합니다
 
 **Important:** The value of the Languages field in the App Store (under the Information section of your app) is determined by the existence of `.lproj` folders in your app bundle rather than by your app configuration in iTunes Connect. If you see the Languages field of your app doesn't contain exactly your supported languages, check if your app bundle contains the appropriate `.lproj` folders. If your app doesn't use `.lproj` folders to manage localized resources, make sure your app's `CFBundleLocalizations` specifies all your supported languages.
 
