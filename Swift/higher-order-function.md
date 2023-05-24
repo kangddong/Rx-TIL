@@ -1,9 +1,9 @@
 ## 2023.01.27
 ## map, flatMap, compactMap, forEach, filter, reduce
   
-  ```swift
+```swift
   
-  import Foundation
+import Foundation
 
 // MARK: map
 // 각 요소에 대한 값을 변경하고자 할 때 사용하고, 그 결과들을 배열로 반환합니다.
@@ -113,3 +113,24 @@ print(" =================================================== \n")
 
   ```
 </details>
+
+# forEach
+
+배열의 특정 아이템만 바꾸기
+
+``` swift
+categoryCodes.indices
+.filter { categoryCodes[$0].type == categoryCodes[indexPath.item].type }
+.forEach { categoryCodes[$0].isSelected = true }
+```
+
+나의 경우 UICollectionView, (혹은 UITableView)를 사용했기에 cell의 IndexPath를 알고 있었다
+
+
+```swift
+case .category:
+	guard var code = categoryCodes[safe: indexPath.item] else { return }
+	code.isSelected = true
+	categoryCodes[indexPath.item] = code
+
+```
