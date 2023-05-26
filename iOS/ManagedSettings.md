@@ -76,3 +76,9 @@ The system provides your extension with the display names, bundle identifiers, a
 시스템이 응용 프로그램이나 웹 사이트를 가리기 위해 사용하는 실드의 모양을 사용자 지정하는 확장 프로그램을 customize 만들 수 있습니다. 
 시스템은 보호하는 각 애플리케이션, 웹 사이트 또는 category에 대한 display names, bundle identifiers 및 도메인을 확장 프로그램에 제공합니다. 
 최상의 사용자 경험을 제공하기 위해 귀하의 확장 프로그램은 가능한 한 빨리 적절한 구성을 반환해야 합니다. 가족 공유 그룹의 개인 정보를 보호하기 위해 확장 프로그램은 샌드박스에서 실행됩니다. 이 샌드박스는 확장 프로그램이 네트워크 요청을 하거나 확장 프로그램의 주소 공간 외부로 민감한 콘텐츠를 이동하는 것을 방지합니다. 시스템은 하위 클래스가 재정의하지 않거나 구성을 반환하는 데 너무 오래 걸리는 경우 모든 메서드에 기본 모양을 제공합니다.
+
+
+>참고 자료
+[ApplicationToken](https://developer.apple.com/documentation/managedsettings/applicationtoken)
+[bundleidentifier](https://developer.apple.com/documentation/managedsettings/application/bundleidentifier)
+[ShieldConfigurationDataSource](https://developer.apple.com/documentation/managedsettingsui/shieldconfigurationdatasource)
