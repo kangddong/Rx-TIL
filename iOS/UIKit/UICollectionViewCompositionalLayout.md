@@ -38,3 +38,7 @@ public enum UICollectionLayoutSectionOrthogonalScrollingBehavior : Int, @uncheck
 
 }
 ```
+
+
+
+https://velog.io/@sopt_official/iOS1 - 기본 개념 매우 좋음
