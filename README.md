@@ -10,6 +10,7 @@
 - [Xcode](#xcode)
 - [Firebase](#firebase)
 - [Trouble Shooting](#trouble-shooting)
+- [관심사](#interests)
 
 <br><br>
 
@@ -93,3 +94,11 @@
 </div>
 
 트러블슈팅에 대한 원인 및 해결 과정을 적었습니다. [이곳](TroubleShooting/README.md)
+
+> ## Interests
+
+[Game Controller](GameController/)
+
+
+
+obsidian://open?vault=Rx-TIL&file=Game%20Controller%2FGCControlelr
