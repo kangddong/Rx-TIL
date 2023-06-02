@@ -9,12 +9,7 @@ tableView.delegate = self
 위와 같은 코드를 작성하게 된다.
 작성 후 어떠한 행위도 하지않는다면 아래와 같은 오류 메세지를 볼 수 있게된다.
 
-> type '<Object name>' does not conform to protocol 'UITableViewDataSource'
-Do you want to add protocol stubs?
-
-
 `UITableViewDataSource` 는 아래와 같이 `protocol`로 되어있다.
-
 
 ```swift
 @MainActor protocol UITableViewDataSource: NSObjectProtocol
@@ -23,6 +18,10 @@ Do you want to add protocol stubs?
 `protocol`을 채택했기에 우린 선언 된 파라미터와 메소드 등을 구현해야한다.
 그래서 protocol **stubs**? 에서 stubs 는 무엇을 의미하는지 궁금해졌다.
 
+
+**type '<Object name>' does not conform to protocol 'UITableViewDataSource'**<br>
+**Do you want to add protocol stubs?**
+  
 # stub
 
 테스트 기법에서 많이 쓰이는 용어이다.
@@ -32,3 +31,8 @@ stub은 사전에 정의 된(interface로서) 반응으로 동작하게한다.
 
 참고
 [https://blog.naver.com/suresofttech/221204092938](https://blog.naver.com/suresofttech/221204092938)
+
+
+
+  
+
