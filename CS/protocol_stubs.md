@@ -9,6 +9,10 @@ tableView.delegate = self
 위와 같은 코드를 작성하게 된다.
 작성 후 어떠한 행위도 하지않는다면 아래와 같은 오류 메세지를 볼 수 있게된다.
 
+
+type '<Object name>' does not conform to protocol 'UITableViewDataSource'
+Do you want to add protocol stubs?
+
 `UITableViewDataSource` 는 아래와 같이 `protocol`로 되어있다.
 
 ```swift
