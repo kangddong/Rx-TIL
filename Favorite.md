@@ -71,3 +71,11 @@
 * [Documentaion Arichive - Programming with Objective-C](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/FoundationTypesandCollections/FoundationTypesandCollections.html#//apple_ref/doc/uid/TP40011210-CH7-SW2)
 * [Objective - C 2.0 책 요약 블로그](https://karl-park.github.io/devstory/2016/03/22/ObjectiveC-Objective-2-0-1/)
 * [Apple Developer Documentation](https://developer.apple.com/documentation/objectivec/objective-c_runtime?language=objc)
+
+
+# 컨퍼런스들
+
+[Async Swift Korea](https://www.youtube.com/@asyncswiftkorea8910/videos)
+Let us go
+[Let's Swift](https://youtu.be/b8JPjHK5wvw)
+[dotSwift](https://www.dotconferences.com/conference/dotswift)
