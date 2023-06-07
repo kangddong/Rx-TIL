@@ -1,4 +1,30 @@
 
+responding 과 핸들링 이벤트에 대한 추상적인 인터페이스
+
+```swift
+@MainActor class UIResponder: NSObject
+```
+
+응답기 개체(UIResponder 인스턴스)는 UIKit 앱의 이벤트 처리 backbone을 구성합니다.
+`UIApplication` 개체, `UIViewController` 개체 및 모든 `UIView` 개체(`UIWindow` 포함)를 비롯한 많은 주요 개체가 응답자입니다. 
+이벤트가 발생하면 UIKit은 이벤트를 앱의 응답자 개체로 전송하여 처리합니다.
+터치 이벤트, 모션 이벤트, remote-contol 이벤트, press 이벤트 등 여러 종류의 이벤트가 있습니다.
+
+특정 유형의 이벤트를 처리하려면 응답자가 해당 메서드를 꼭(must) 재정의해야 합니다. 
+예를 들어, 터치 이벤트를 처리하기 위해, a responder  `touchesBegan(_:with:)`, `touchesMoved(_:with:)`, `touchesEnded(_:with:)`, and `touchesCancelled(_:with:)` 메소드들을 구현한다. 
+터치의 경우 responder는 UIKit에서 제공하는 이벤트 정보를 사용하여 터치의 변경 내용을 추적하고 앱의 인터페이스를 적절하게 업데이트합니다.
+ 
+In addition to handling events, UIKit responders also manage the forwarding of unhandled events to other parts of your app. If a given responder doesn’t handle an event, it forwards that event to the next event in the responder chain. UIKit manages the responder chain dynamically, using predefined rules to determine which object should be next to receive an event. For example, a view forwards events to its superview, and the root view of a hierarchy forwards events to its view controller.
+
+UIKit 응답자는 이벤트 처리 외에도 처리되지 않은 이벤트를 앱의 다른 부분으로 전달하는 작업도 관리합니다. 지정된 응답자가 이벤트를 처리하지 않으면 해당 이벤트를 응답자 체인의 다음 이벤트로 전달합니다. UIKit는 미리 정의된 규칙을 사용하여 이벤트를 수신할 다음 개체를 결정하여 응답기 체인을 동적으로 관리합니다. 예를 들어 보기는 이벤트를 해당 수퍼뷰로 전달하고 계층의 루트 보기는 이벤트를 해당 보기 컨트롤러로 전달합니다.
+
+Responders process [`UIEvent`](https://developer.apple.com/documentation/uikit/uievent) objects but can also accept custom input through an input view. The system’s keyboard is the most obvious example of an input view. When the user taps a [`UITextField`](https://developer.apple.com/documentation/uikit/uitextfield) and [`UITextView`](https://developer.apple.com/documentation/uikit/uitextview)object onscreen, the view becomes the first responder and displays its input view, which is the system keyboard. Similarly, you can create custom input views and display them when other responders become active. To associate a custom input view with a responder, assign that view to the [`inputView`](https://developer.apple.com/documentation/uikit/uiresponder/1621092-inputview) property of the responder.
+
+
+응답자는 UI 이벤트 개체를 처리하지만 입력 보기를 통해 사용자 지정 입력을 수락할 수도 있습니다. 시스템의 키보드는 입력 보기의 가장 확실한 예입니다. 사용자가 화면에서 UITextField 및 UITextView 개체를 누르면 보기가 첫 번째 응답자가 되고 입력 보기인 시스템 키보드를 표시합니다. 마찬가지로, 사용자 정의 입력 보기를 작성하고 다른 응답자가 활성화될 때 표시할 수 있습니다. 사용자 지정 입력 보기를 응답기와 연결하려면 해당 보기를 응답기의 inputView 속성에 할당합니다.
+git a
+responders 및 esponder chain에 대한 내용은 `Using responders and the responder chain to handle events`를 참조하십시오.
+
 # Overview
 
 Apps receive and handle events using _responder objects_. A responder object is any instance of the [`UIResponder`](https://developer.apple.com/documentation/uikit/uiresponder) class, and common subclasses include [`UIView`](https://developer.apple.com/documentation/uikit/uiview), [`UIViewController`](https://developer.apple.com/documentation/uikit/uiviewcontroller), and [`UIApplication`](https://developer.apple.com/documentation/uikit/uiapplication). Responders receive the raw event data and must either handle the event or forward it to another responder object. When your app receives an event, UIKit automatically directs that event to the most appropriate responder object, known as the _first responder_. 
