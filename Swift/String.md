@@ -24,3 +24,8 @@ func replacingOccurrences(
 ```swift
 let newString = smapleString.replacingOccurrences(of: "<br>", with: "")
 ```
+
+
+# initializer
+
+`init(describing: TextOutputStreamable)`
