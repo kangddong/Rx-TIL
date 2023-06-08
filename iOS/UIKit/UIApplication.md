@@ -13,3 +13,13 @@ if let url = URL(string: UIApplication.openNotificationSettingsURLString) {
 	await UIApplication.shared.open(url)
 }
 ```
+
+
+# Safari로 이동 시키기
+
+``` swift
+if let url = URL(string: "www.apple.com") {
+	// move web browser
+	await UIApplication.shared.open(url)
+}
+```
