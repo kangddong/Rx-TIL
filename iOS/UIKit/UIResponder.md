@@ -1,3 +1,6 @@
+# Using responders and the responder chain to handle events
+
+Learn how to handle events that propagate through your app.
 
 responding 과 핸들링 이벤트에 대한 추상적인 인터페이스
 
@@ -28,6 +31,9 @@ responders 및 esponder chain에 대한 내용은 `Using responders and the resp
 # Overview
 
 Apps receive and handle events using _responder objects_. A responder object is any instance of the [`UIResponder`](https://developer.apple.com/documentation/uikit/uiresponder) class, and common subclasses include [`UIView`](https://developer.apple.com/documentation/uikit/uiview), [`UIViewController`](https://developer.apple.com/documentation/uikit/uiviewcontroller), and [`UIApplication`](https://developer.apple.com/documentation/uikit/uiapplication). Responders receive the raw event data and must either handle the event or forward it to another responder object. When your app receives an event, UIKit automatically directs that event to the most appropriate responder object, known as the _first responder_. 
+
+앱은 _responder 객체_ 를 사용하여 이벤트를 수신하고 처리합니다. _responder 객체_ 는 `UIResponder` 클래스의 인스턴스이며, 일반적인 하위 클래스에는 `UIView`, `UIViewController` 및 `UIApplication`이 포함됩니다. `responder`는 raw event data를 받고 이벤트를 처리하거나 다른 `responder` 객체로 전달해야 합니다.
+앱이 이벤트를 받으면, `UIKit`은 자동으로 해당 이벤트를  `first responder`로 알려진 가장 적절한 `responder` 객체로 보냅니다.
 
 Unhandled events are passed from responder to responder in the active _responder chain_, which is the dynamic configuration of your app’s responder objects. The following image shows the responders in an app whose interface contains a label, a text field, a button, and two background views. The diagram also shows how events move from one responder to the next, following the responder chain.
 
