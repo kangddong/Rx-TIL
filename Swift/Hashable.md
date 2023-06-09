@@ -6,6 +6,9 @@ protocol Hashable : Equatable
 
 # Overview
 
+<details><summary> 공식문서 번역 보기 </summary>
+<p>
+
 `Hashable` 프로토콜을 준수하는 어떤 타입이든 `Set`나 `dictionary key`로 사용할 수 있습니다. 
 표준 라이브러리의 많은 타입이 `Hashable`을 준수합니다. `String`, `Int`, `floating-point` 및 `Boolean value`, 심지어 기본적으로 `Sets`도 해시 가능합니다. 
 일부 다른 타입, 예를 들어 옵셔널, 배열 및 ranges는 타입 인수가 동일한 경우 자동으로 해시 가능해집니다.
@@ -14,7 +17,6 @@ protocol Hashable : Equatable
 
 값을 `Hashing`한다는 것은 `hash` 함수에 해당하는 `Hasher` 타입으로 핵심 구성 요소를 공급하는 것을 의미합니다. 핵심 구성 요소는 `Equatable`  타입의  구현에 기여하는 요소입니다. 
 동일한 값을 가진 두 인스턴스는 `hash(into:)`에서 `Hasher`에 동일한 값을 동일한 순서로 공급해야합니다.
-
 
 # Conforming to the Hashable Protocol  
 
@@ -72,11 +74,13 @@ if tappedPoints.contains(nextTap) {
 }
 // Prints "New tap detected at (0, 1).")
 ```
-`Hashble`을  채택하는 경우
 
-```swift
-func hash(into hasher: inout Hasher)
-```
+</p>
+</details>
+
+
+
+# Example
 
 ```swift
 struct ScoreInfo: Codable, Hashable {
