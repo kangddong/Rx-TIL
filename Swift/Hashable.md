@@ -77,3 +77,45 @@ if tappedPoints.contains(nextTap) {
 ```swift
 func hash(into hasher: inout Hasher)
 ```
+
+```swift
+struct ScoreInfo: Codable, Hashable {
+    /// 평가 항목 시퀀스
+    let scoreItemNo: Int
+    /// 평점
+    let score: Float
+
+    init(scoreItemNo: Int, score: Float) {
+
+        self.scoreItemNo = scoreItemNo
+        self.score = score
+
+    }
+
+    func hash(into hasher: inout Hasher) {
+
+        hasher.combine(scoreItemNo)
+    }
+
+    static func == (lhs: ScoreInfo, rhs: ScoreInfo) -> Bool {
+		// lhs, rhs 비교시 scoreItemNo 같으면 같은 Hash라고 생각해서 중복 허용안함
+        return lhs.scoreItemNo == rhs.scoreItemNo
+
+    }
+}
+
+var info: Set<ScoreInfo> = []
+let scoreInfo1 = ScoreInfo(scoreItemNo: 0, scroe: 3.0)
+let scoreInfo2 = ScoreInfo(scoreItemNo: 0, scroe: 3.0)
+let scoreInfo3 = ScoreInfo(scoreItemNo: 0, scroe: 4.0)
+
+info.insert(scoreInfo1) // [scoreInfo1]
+info.insert(scoreInfo2) // [scoreInfo1]
+info.insert(scoreInfo3) // [scoreInfo1]
+
+scoreItemNo는 유지하고, score의 변동사항만 바꾸고싶다면
+
+info.update(scoreInfo1) // [scoreInfo1]
+info.update(scoreInfo2) // [scoreInfo1]
+info.update(scoreInfo3) // [scoreInfo1, scoreInfo3]
+```
