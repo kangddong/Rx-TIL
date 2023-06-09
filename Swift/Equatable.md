@@ -1,4 +1,4 @@
-# Hashable
+# Equatable
 
 ```swift
 import UIKit
