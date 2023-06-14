@@ -63,8 +63,10 @@
   > ## Xcode
   
 </div>
-[Xcode](/Xcode) 을 사용하면서 익힌 기능 및 팁
-[VALID_ARCH 문제 해결하여 시뮬레이터 실행 시키기](/Xcode/VALID_ARCH.md)
+
+* [Xcode](Xcode/README.md) 을 사용하면서 익힌 기능 및 팁
+* [VALID_ARCH 문제 해결하여 시뮬레이터 실행 시키기](Xcode/VALID_ARCH.md)
+
 <br><br>
 
 <div align=left>
