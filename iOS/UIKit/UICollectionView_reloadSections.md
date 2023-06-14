@@ -10,6 +10,17 @@ func reloadSections(_ section: IndexSet)
 지정된 섹션의 항목만 선택적으로 다시 로드하려면 이 메소드를 호출하십시오. 
 이로 인해 컬렉션 뷰는 해당 항목과 관련된 모든 셀을 버리고 다시 표시합니다. 이 메서드는 또한 지정된 섹션의 placeholders를 버립니다.
 
+## IndexSet
+
+다른 컬렉션에 있는 elements의 인덱스를 나타내는 고유한 정수 값의 컬렉션입니다.
+
+```swift
+struct IndexSet
+```
+
+유효한 정수 값의 범위는 `0...Int.max-1` 입니다 . 이 범위를 벗어나면 오류입니다.
+
+
 # 사용 예시
 
 
