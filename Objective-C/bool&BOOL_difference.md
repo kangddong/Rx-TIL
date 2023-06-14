@@ -4,7 +4,7 @@
 `true`는 0이 아닌 수들을 뜻하지만
 `YES`는 오직 1이다
 ``
-`BOOL` 타입은 `obc.h`에 따라서 `signed char` 타입이다
+`BOOL` 타입은 `obc.h`에 따라서 `signed char` 타입이다.
 
 ```objc
 bool b1 = 2;
