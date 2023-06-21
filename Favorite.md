@@ -10,6 +10,8 @@
 * [raywenderlich](https://www.raywenderlich.com)
 * [김종권의 iOS 앱 개발 알아가기](https://ios-development.tistory.com)
 * [애플사이다](https://applecider2020.tistory.com)
+* [개발자 소들이](https://babbab2.tistory.com)
+  [Zedd](https://zeddios.tistory.com)
 
 ## 디바이스
 * https://gist.github.com/adamawolf/3048717
@@ -79,3 +81,8 @@
 Let us go
 [Let's Swift](https://youtu.be/b8JPjHK5wvw)
 [dotSwift](https://www.dotconferences.com/conference/dotswift)
+
+
+# Network
+
+[네트워크 쉽게 이해하기 시리즈](https://mindnet.tistory.com/entry/네트워크-이해하기-1편-네트워크Network-란)
