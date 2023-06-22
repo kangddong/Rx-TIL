@@ -86,3 +86,7 @@ Let us go
 # Network
 
 [네트워크 쉽게 이해하기 시리즈](https://mindnet.tistory.com/entry/네트워크-이해하기-1편-네트워크Network-란)
+
+# 일하는 방법
+
+[Shape Up 한국어 요약](https://medium.com/@slow_scale/shape-up-한국어-요약-e6436f6eba8a)
