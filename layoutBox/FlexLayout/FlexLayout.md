@@ -14,7 +14,7 @@ Flex
 
 ## ScrollView+
 
-[PinLayout에서 pin 메소드를 통해 사용법 설명 대체](/layoutBox/PinLayout.md)
+[PinLayout에서 pin 메소드를 통해 사용법 설명 대체](PinLayout.md)
 
 
 ``` swift
