@@ -100,7 +100,3 @@
 > ## Interests
 
 [Game Controller](GameController/)
-
-
-
-obsidian://open?vault=Rx-TIL&file=Game%20Controller%2FGCControlelr
