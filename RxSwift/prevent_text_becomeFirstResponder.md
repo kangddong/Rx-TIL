@@ -79,3 +79,6 @@ textField.rx
 ```
 
 UIControl.Event 문서에는 rawValuew: 0에 대한 정보가 없다
+
+
+![[Pasted image 20230704184423.png]]
