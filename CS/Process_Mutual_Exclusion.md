@@ -19,3 +19,9 @@
 ### 세마포어
 ### 모니터
 ### 스핀락
+
+critical section problem 동시성 문제
+
+1. Race condition (경쟁상황)
+2. Deadlocks (교착상태)
+3. Priority Inversion (우선 순위의 뒤바뀜)

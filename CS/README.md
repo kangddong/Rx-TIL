@@ -2,7 +2,7 @@
 
 # OS
 
-[프로세스와 상호배제](CS/프로세스와_상호배제.md)
+[프로세스와 상호배제](Process_Mutual_Exclusion.md)
 
 
 <details>
