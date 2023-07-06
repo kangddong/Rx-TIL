@@ -21,11 +21,7 @@
 </div>
 
 꼼꼼한 재은씨 기본편/실전편 스터디에 대한 자료는 [이곳](LetsSwiftyStudy.md)
-문법에 대한 정리는 [이곳](Swift/README.md)
-* [고차함수 정리](higher-order-function.md)
-* [현재 시간 및 시간 차 구하기](Date-time-difference.md)
-* [AnyObject vs AnyClass](Swift/AnyObject_vs_AnyClass.md)
-
+문법에 대한 정리는 [이곳](Swift.md)
 
 <div align=left>
 
@@ -33,7 +29,7 @@
 
 </div>
 
-* [bool & BOOL 타입의 차이](Objective-C/bool&BOOL_difference.md)
+문법에 대한 정리는 [이곳](Objective-C.md)
 
 <br><br>
 <div align=left>
@@ -45,18 +41,6 @@
 * [UIKit](iOS/UIKit) 프레임워크에 있는 클래스들의 개념과 사용해보면서 알게 된 내용 정리
 ----
 
-* [CGAffineTransform을 이용한 회전](iOS/UIKit/CGAffineTransform_rotate.md)
-* [UIImage SymbolConfiguration 사용해보기](iOS/UIKit/UIImage_SymbolConfiguration_사용해보기.md)
-* [RenderingMode를 통해 이미지의 색상을 바꿔보자](iOS/UIKit/RenderingMode를%20통해%20이미지의%20색상을%20바꿔보자.md)
-* [Swipe Back Gesture UINavigationController에서 사용법](iOS/UIKit/Swipe_Back_Gesture_UINavigationController에서_사용법.md)
-* [UITableView 사용해보기 - 2 (didSelectRowAt with Selection)](iOS/UIKit/About_didDeselectRowAt_Selection.md)
-* [Core Location 사용해보기 - 1](iOS/UIKit/Core_Location.md)
-* [Home Screen Quick Actions 사용해보기](iOS/UIKit/Home_Screen_Quick_Actions_사용해보기.md)
-* [title과 navigationBar.topItem.title의차이](iOS/UIKit/title과_navigationBar.topItem.title의_차이.md)
-* [UserNotification 사용하기](iOS/UIKit/UserNotification.md)
-
-----
-
 
 <div align=left>
   
@@ -64,8 +48,7 @@
   
 </div>
 
-* [Xcode](Xcode/README.md) 을 사용하면서 익힌 기능 및 팁
-* [VALID_ARCH 문제 해결하여 시뮬레이터 실행 시키기](Xcode/VALID_ARCH.md)
+* [Xcode](Xcode.md) 을 사용하면서 익힌 기능 및 팁
 
 <br><br>
 

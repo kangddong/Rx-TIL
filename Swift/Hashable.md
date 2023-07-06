@@ -146,3 +146,4 @@ https://dawoum.ddns.net/wiki/Sides_of_an_equation
 [Apple Document Equatable](https://developer.apple.com/documentation/swift/equatable)
 [위키](https://en.wikipedia.org/wiki/Sides_of_an_equation)
 https://alohalimi.tistory.com/entry/SWIFT-%EC%97%B0%EC%82%B0%EC%9E%90%EC%97%90%EC%84%9C-%EC%95%8C%EC%95%84%EB%91%AC%EC%95%BC-%ED%95%A0%EA%B2%83Operator
+[Equatable](Swift/Equatable)
