@@ -4,4 +4,6 @@
 [CollectionView Header 사용하기](/iOS/UIKit/UICollectionView/use_collectionView_header)
 
 
-[UICollectionViewCompositionalLayout](UICollectionViewCompositionalLayout.md)
+[UICollectionViewCompositionalLayout](UICollectionViewCompositionalLayout_node.md)
+
+
