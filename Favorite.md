@@ -11,7 +11,8 @@
 * [김종권의 iOS 앱 개발 알아가기](https://ios-development.tistory.com)
 * [애플사이다](https://applecider2020.tistory.com)
 * [개발자 소들이](https://babbab2.tistory.com)
-  [Zedd](https://zeddios.tistory.com)
+* [Zedd](https://zeddios.tistory.com)
+* [Ali-Akhtar](https://ali-akhtar.medium.com/uicollection-compositional-layout-part-1-de0c2d7c6d69)
 
 ## 디바이스
 * https://gist.github.com/adamawolf/3048717
