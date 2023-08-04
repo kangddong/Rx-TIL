@@ -24,15 +24,23 @@
 
 
 # “Hot” and “Cold” Observables
+그럼 `Observable`은  언제 `sequence`를 방출할까?
+"`Observable`에 따라 다르다"이다. 
+`“hot” Observable`은 생성되자 마자 `item`들을 방출할 수 있으며, 
+따라서 나중에 `Observable`을 구독한 `observer`는 중간 어딘가에서 `sequence`를 `observing`**(관찰)**하기 시작할 수 있습니다.
 
+반대로, `“cold” Observable`은 `observer`가 구독할 때 까지 `item`들을 방출하지 않기 때문에
+이 `Observable`을 구독하는 `observer`는 `Observable`이 방출하는 `sequence` 전체를 구독할 수 있도록 보장 받는다.
 
+ReactiveX의 구현 코드 중에는 `“Connectable (연결 가능한)” Observable` 이라고 불리는 `Observable` 객체가 존재하는데, 
+이 `Observable`은 `observer`의 구독 여부와는 상관 없이 자신의 [Connect](https://reactivex.io/documentation/ko/operators/connect.html) 메서드가 호출되기 전까지 `item`들을 방출하지 않는다.
 # Observable 연산자를 활용한 구성
 
-Observable과 옵저버는 그저 ReactiveX의 시작점일 뿐이다. 우리가 알고 있는 **표준 옵저버 패턴**을 조금 확장한 것이며, 연속된 이벤트를 처리하는데 있어서는 싱글 콜백보다는 훨씬 더 효과적인 방법을 제공한다.
+`Observable`과 `observer`는 그저 ReactiveX의 시작점일 뿐이다. 우리가 알고 있는 **표준 옵저버 패턴**을 조금 확장한 것이며, 연속된 이벤트를 처리하는데 있어서는 싱글 콜백보다는 훨씬 더 효과적인 방법을 제공한다.
 
 "리액티브 확장(reactive extensions)"(그래서 "ReactiveX"로 부르는)의 진짜 힘은 연산자로부터 나온다. 연산자들은 Observable이 배출하는 연속된 항목들을 변환시키고, 결합하고, 조작하는 기능들을 제공한다.
 
-이 연산자들은 콜백이 제공하는 효율적인 장점들을 바탕으로 선언적인 방법을 통해 연속된 비동기 호출을 구성할 수 있는 방법을 제공하는데, 중요한 것은 일반적인 비동기 시스템이 가진 중첩된 콜백 핸들러의 단점들을 제거했다는 점이다.
+이 연산자들은 콜백이 제공하는 효율적인 장점들을 바탕으로 `선언적인 방법`을 통해 연속된 `비동기 호출을 구성할 수 있는 방법을 제공`하는데, 중요한 것은 일반적인 비동기 시스템이 가진 중첩된 `callback handlers`의 `단점들을 제거`했다는 점이다.
 
 여기에서 제공하는 문서들은 [다양한 연산자](https://reactivex.io/documentation/operators.html#alphabetical)에 대한 내용을 그룹으로 나눠 연결된 링크들을 통해 실제 사용에 필요한 예제를 제공한다:
 
