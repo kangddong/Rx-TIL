@@ -36,6 +36,40 @@ Observable과 옵저버는 그저 ReactiveX의 시작점일 뿐이다. 우리가
 
 여기에서 제공하는 문서들은 [다양한 연산자](https://reactivex.io/documentation/operators.html#alphabetical)에 대한 내용을 그룹으로 나눠 연결된 링크들을 통해 실제 사용에 필요한 예제를 제공한다:
 
+[Observable 생성](https://reactivex.io/documentation/operators.html#creating)
+`Create`, `Defer`, `Empty`/`Never`/`Throw`, `From`, `Interval`, `Just`, `Range`, `Repeat`, `Start`, 그리고 `Timer`
+
+[Observable 항목 변환](https://reactivex.io/documentation/operators.html#transforming)
+`Buffer`, `FlatMap`, `GroupBy`, `Map`, `Scan`, 그리고 `Window`
+
+[Observable 필터](https://reactivex.io/documentation/operators.html#filtering)
+`Debounce`, `Distinct`, `ElementAt`, `Filter`, `First`, `IgnoreElements`, `Last`, `Sample`, `Skip`, `SkipLast`, `Take`, 그리고 `TakeLast`
+
+[Observable 결합](https://reactivex.io/documentation/operators.html#combining)
+`And`/`Then`/`When`, `CombineLatest`, `Join`, `Merge`, `StartWith`, `Switch`, 그리고 `Zip`
+
+[오류 처리 연산자](https://reactivex.io/documentation/operators.html#error)
+`Catch` , `Retry`
+
+[유틸리티 연산자](https://reactivex.io/documentation/operators.html#utility)
+`Delay`, `Do`, `Materialize`/`Dematerialize`, `ObserveOn`, `Serialize`, `Subscribe`, `SubscribeOn`, `TimeInterval`, `Timeout`, `Timestamp`, 그리고 `Using`
+
+[조건 및 불린(Boolean) 연산자](https://reactivex.io/documentation/operators.html#conditional)
+`All`, `Amb`, `Contains`, `DefaultIfEmpty`, `SequenceEqual`, `SkipUntil`, `SkipWhile`, `TakeUntil`, 그리고 `TakeWhile`
+
+[수학과 조합 연산자](https://reactivex.io/documentation/operators.html#mathematical)
+`Average`, `Concat`, `Count`, `Max`, `Min`, `Reduce`, 그리고 `Sum`
+
+[변환 Observable](https://reactivex.io/documentation/operators.html#conversion)
+`To`
+
+[연결 가능한 Observable 연산자](https://reactivex.io/documentation/operators.html#connectable)
+
+`Connect`, `Publish`, `RefCount`, 그리고 `Replay`
+
+[역압(backpressure) 연산자](https://reactivex.io/documentation/operators/backpressure.html)
+
+특정 제어흐름 원칙들을 적용하는 다양한 연산자들
 ## Chaining Operators(연산자 체인)
 
 대부분의 연산자들은 Observable 상에서 동작하고 Observable을 리턴한다. 이런 접근 방법은 연산자들을 하나의 Observable에 적용하고 또 다음 연산자에 다시 적용할 수 있는 연산자 체인을 제공한다. 연산자 체인에 걸려있는 각각의 연산자들은 이전 연산자가 리턴한 Observable을 변경한다.
