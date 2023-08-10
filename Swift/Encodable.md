@@ -1,0 +1,4 @@
+
+```swift
+protocol Encodable
+```
