@@ -76,7 +76,7 @@ App Store Server API를 사용하여 제품 Entitlement(권한) 및 거래 업�
 
 간략하게 정리를 해보자 !
 
-1. 세금 및 금융거래 정보를 설정
+1. [세금 및 금융거래 정보](In-App-Purchase/banking-tax-information.md)를 설정
 2. App Store Connect 설정 추가
 3. StoreKit 연동
 
