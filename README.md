@@ -102,8 +102,11 @@
 
 트러블슈팅에 대한 원인 및 해결 과정을 적었습니다. [이곳](TroubleShooting/README.md)
 
+> ## CS
+
+[CS](CS/CS_node.md)
+
+
 > ## Interests
 
 [Game Controller](GameController/GameController_node.md)
-
-
