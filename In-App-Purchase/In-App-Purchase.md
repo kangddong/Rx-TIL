@@ -64,7 +64,7 @@ There are four types of in-app purchases and you can offer multiple types within
 
 Xcode 에서 앱에 앱 내 구입 기능을 추가한 후 `StoreKit`을 사용하여 안전하고 보안이 유지되는 구입 경험을 위한 앱 내 구입을 지원해 보십시오. `StoreKit` 프레임워크 및 앱 내 구입 API는 제품 정보 검색, 결제 처리, 제품 배송 등 구입에 관한 작업을 처음부터 끝까지 처리합니다.
 
-[Go to StoreKit](In-App-Purchase/StoreKit.md)
+[Go to StoreKit](StoreKit2.md)
 
 
 #### Determine transaction status

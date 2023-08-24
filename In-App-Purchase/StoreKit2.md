@@ -3,29 +3,22 @@
 인앱 구매 및 App Store와의 상호 작용을 지원
 
   
-
 - 인앱구매 (In-App Purchase)
-
 콘텐츠와 서비스에 대한 인앱 구매를 제공하고 홍보하세요.
 
 - App transaction ()
-
 App Store에서 서명한 거래로 고객의 앱 구매를 확인하세요.
 
 - Ad network attribution
-
 광고 기반 앱 설치를 검증하세요.
 
 - Recommendations
-
 third-party 콘텐츠에 대한 권장 사항을 제공하세요.
 
 - Reviews
-
 고객에게 App Store 리뷰와 평가를 요청하세요.
 
 - Messages
-
 앱에 App Store 메시지를 표시하세요.
 
   
