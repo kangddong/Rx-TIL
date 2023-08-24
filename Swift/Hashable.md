@@ -123,9 +123,9 @@ lhs(left-hand side), rhs(right-hand-side)이다.
 }
 
 var info: Set<ScoreInfo> = []
-let scoreInfo1 = ScoreInfo(scoreItemNo: 0, scroe: 3.0)
-let scoreInfo2 = ScoreInfo(scoreItemNo: 0, scroe: 3.0)
-let scoreInfo3 = ScoreInfo(scoreItemNo: 0, scroe: 4.0)
+let scoreInfo1 = ScoreInfo(scoreItemNo: 0, score: 3.0)
+let scoreInfo2 = ScoreInfo(scoreItemNo: 0, score: 3.0)
+let scoreInfo3 = ScoreInfo(scoreItemNo: 0, score: 4.0)
 
 info.insert(scoreInfo1) // [scoreInfo1]
 info.insert(scoreInfo2) // [scoreInfo1]
