@@ -46,3 +46,27 @@ func components(separatedBy: CharacterSet) -> [String]
 `Foundation` 유형은 `CharacterSet`을 사용하여 검색 작업을 위해 문자를 그룹화하여 검색 중에 특정 문자 세트를 찾을 수 있습니다.
 
 이 유형은 "copy-on-write" 동작을 제공하며, Objective-C NSCharacterSet 클래스에 브릿지됩니다.
+
+## String.Index 사용
+
+`String`은 `Int` 타입으로는  `subscript` 로 접근할 수 없음 -> 왜 ?...
+`String.Index`로 접근해야함
+
+주어진 index으로부터 지정된 거리의 index를 반환
+```swift
+func index(
+	_ i: String.Index,
+	offsetBy distance: Int
+) -> String.Index
+```
+
+
+인덱스 i로부터의 거리로 오프셋된 인덱스. 
+distance가 양수인 경우, 이것은 `index(after:)`에 대한 거리 호출의 결과와 동일한 값입니다. distance가 음수라면, 이것은 `index(before:)`에 대한 `abs(distance)` 호출의 결과와 같은 값이다.
+
+### String.SubSequence
+
+```swift
+let str = my_string[frontIdx] // Character Type
+let str2 = my_string[...frontIdx] // String.SubSequence Type
+```
