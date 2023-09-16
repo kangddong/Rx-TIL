@@ -13,6 +13,7 @@
 * [Array+](Swift/Array+.md)
 * [Mirror](Swift/Mirror.md) 
 
+* [Int](Swift/Int.md)
 
 
 Encode & Decode를 쉽게하자
