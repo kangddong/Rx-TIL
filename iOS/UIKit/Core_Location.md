@@ -1,9 +1,8 @@
-> ## Core Location
+# Core Location
 
-### Requesting authorization to use location services
 #### 2023.01.10
 
-위치 권한 얻기 init
+# 1. 위치 권한 얻기 init
   
 1. info.plist에 NSLocationAlwaysAndWhenInUseUsageDescription, NSLocationWhenInUseUsageDescription 를 등록해줘야한다
   
@@ -22,3 +21,33 @@
       }
    }   
   ```
+
+
+# 2. 요청 권한 확인
+
+[CLAuthorizationStatus](https://developer.apple.com/documentation/corelocation/clauthorizationstatus)
+
+```swift
+func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) { 
+    switch manager.authorizationStatus {
+        case .authorizedWhenInUse: // Location services are available. 
+            enableLocationFeatures()
+            break
+        case .restricted, .denied: // Location services currently unavailable. 
+            disableLocationFeatures()
+            break
+        case .notDetermined: // Authorization not determined yet. 
+            manager.requestWhenInUseAuthorization()
+            break
+        default:
+            break
+    }
+}
+```
+
+위와 같은 경우에 `manager.authorizationStatus` 에서 print CLAuthorizationStatus(rawValue:)
+# 위치권한 요청
+- 위치권한 요청은 1회만 가능하다.
+
+참고자료
+[Requesting authorization to use location services](https://developer.apple.com/documentation/corelocation/requesting_authorization_to_use_location_services)
