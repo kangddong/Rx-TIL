@@ -13,6 +13,7 @@
 * [개발자 소들이](https://babbab2.tistory.com)
 * [Zedd](https://zeddios.tistory.com)
 * [Ali-Akhtar](https://ali-akhtar.medium.com/uicollection-compositional-layout-part-1-de0c2d7c6d69)
+* [야곰 네이버 부스트코스](https://www.boostcourse.org/mo326/lecture/16866?isDesc=false)
 
 ## 디바이스
 * https://gist.github.com/adamawolf/3048717
@@ -32,6 +33,10 @@
 * https://seizze.github.io/2019/12/20/iOS-메모리-뜯어보기,-메모리-이슈-디버깅하기,-메모리-릭-찾기.html
 * https://soulpark.wordpress.com/2012/05/31/ios-memory-management-zombies/
 * https://magicmon.tistory.com/222
+
+# CS
+[CPU 코어와 스레드](https://www.youtube.com/watch?v=_dhLLWJNhwY)
+[모두를 위한 컴퓨터  과학](https://www.boostcourse.org/cs112/joinLectures/41307)
 
 ## 모듈
 * [Library Framework Swift Package 차이점](https://medium.com/delightroom/ios-library-framework-swift-package-알아보자-차이점-1f42c7848771)
